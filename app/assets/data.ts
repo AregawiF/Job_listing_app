@@ -185,8 +185,3 @@ export default function GetData(){
             ]
             );
         }
-
-
-const data = GetData()
-
-console.log(data.map((d) => d.title))

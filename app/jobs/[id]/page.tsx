@@ -5,7 +5,7 @@ import AboutDetail from '@/app/components/AboutDetail';
 
 const JobDetailPage = ({ params }: { params: { id: string } }) => {
 
-    const styles = ['mr-4 px-3 py-1 rounded-full bg-bgGreen text-mygreen bg-opacity-10', 'mr-4 px-3 py-1 rounded-full bg-myorange text-myorange bg-opacity-10', 'mr-4 px-3 py-1 rounded-full bg-mypurple text-mypurple bg-opacity-10' ]
+    const styles = ['mr-4 px-3 py-1 rounded-full bg-bgGreen text-mygreen bg-opacity-10 font-Epilogue', 'mr-4 px-3 py-1 rounded-full bg-myorange text-myorange bg-opacity-10 font-Epilogue', 'mr-4 px-3 py-1 rounded-full bg-mypurple text-mypurple bg-opacity-10 font-Epilogue' ]
     const highlightText = (text:string) => {
     const parts = text.split(':');
     if (parts.length > 1) {
@@ -48,7 +48,7 @@ const JobDetailPage = ({ params }: { params: { id: string } }) => {
             <div className='mb-14'>
             <h1 className='subHeading'>Ideal Candidate we want</h1>
             <ul className='pl-6 leading-6 mt-3'>
-                <li className='list-disc'>Young ({job.ideal_candidate.age}) {job.ideal_candidate.gender} {job.title}</li>
+                <li className='list-disc font-Epilogue'>Young ({job.ideal_candidate.age}) {job.ideal_candidate.gender} {job.title}</li>
                 {job.ideal_candidate.traits.map((trait) => 
                 <li className='list-disc'>{highlightText(trait)}</li>)}
             </ul>

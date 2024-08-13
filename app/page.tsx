@@ -1,4 +1,4 @@
-import JobList from "./components/JobList";
+import JobList from "./jobs/page";
 
 export default function Home() {
   return (
